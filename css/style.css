@@ -1,0 +1,57 @@
+/* Base styles for the page */
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stall-door {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: #d2d2d2;
+    border: 5px solid #a0a0a0;
+    transition: all 0.5s ease;
+}
+
+.stall-door:hover {
+    transform: rotateY(180deg);
+}
+
+.graffiti {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.stall-door-text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    color: #777;
+}
+
+.stall-door:hover .graffiti {
+    display: none;
+}
+
+.stall-door:hover::after {
+    content: "Inside the Sacred Stall... ";
+    color: #ffcc00;
+    font-size: 24px;
+}
