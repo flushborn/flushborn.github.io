@@ -1,0 +1,33 @@
+BODY {
+    BACKGROUND: #FFFF66;
+    COLOR: #0000FF;
+}
+
+H1 {
+    COLOR: #000066;
+}
+
+H2 {}
+
+A {
+    COLOR: #0000cc;
+}
+
+A:hover {
+    COLOR: #550055;
+    BACKGROUND: #aaffaa;
+}
+
+A:link {
+    COLOR: #0000cc;
+}
+
+A:visited {
+    COLOR: #cc00cc;
+}
+
+.balltext {
+    COLOR: #0000Fe;
+    BACKGROUND: #FFFF66;
+}
+
