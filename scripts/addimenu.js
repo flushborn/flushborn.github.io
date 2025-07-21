@@ -19,46 +19,46 @@ function andimenuinit(category) {
     case 'homepage':
       TraceMax = 15;
       startsetting = settingrandom;
-      AddBall('andi', 'Weird1');
-      AddBall('plasma', 'Weird3');
-      AddBall('piano', 'Weird5');
-      AddBall('qiqihar', 'Weird4');
-      AddBall('computer', 'Weird2');
+      AddBall('weird1', 'Weird1');
+      AddBall('weird2', 'Weird3');
+      AddBall('weird3', 'Weird5');
+      AddBall('weird5', 'Weird4');
+      AddBall('weird4', 'Weird2');
       break;
-    case 'andi':
-      AddBall('andi', 'Weird1');
-      AddBall('plasma', 'Weird3');
-      AddBall('piano', 'Weird5');
-      AddBall('qiqihar', 'Weird4');
-      AddBall('computer', 'Weird2');
+    case 'weird1':
+      AddBall('weird1', 'Weird1');
+      AddBall('weird3', 'Weird3');
+      AddBall('weird5', 'Weird5');
+      AddBall('weird4', 'Weird4');
+      AddBall('weird2', 'Weird2');
       break;
-    case 'physics':
-      AddBall('plasma', 'Weird3');
-      AddBall('andi', 'Weird1');
-      AddBall('piano', 'Weird5');
-      AddBall('qiqihar', 'Weird4');
-      AddBall('computer', 'Weird2');
+    case 'weird2':
+      AddBall('weird3', 'Weird3');
+      AddBall('weird1', 'Weird1');
+      AddBall('weird5', 'Weird5');
+      AddBall('weird4', 'Weird4');
+      AddBall('weird2', 'Weird2');
       break;
-    case 'music':
-      AddBall('piano', 'Weird5');
-      AddBall('andi', 'Weird1');
-      AddBall('qiqihar', 'Weird4');
-      AddBall('plasma', 'Weird3');
-      AddBall('computer', 'Weird2');
+    case 'weird3':
+      AddBall('weird5', 'Weird5');
+      AddBall('weird1', 'Weird1');
+      AddBall('weird4', 'Weird4');
+      AddBall('weird3', 'Weird3');
+      AddBall('weird2', 'Weird2');
       break;
-    case 'travelling':
-      AddBall('qiqihar', 'Weird4');
-      AddBall('andi', 'Weird1');
-      AddBall('piano', 'Weird5');
-      AddBall('plasma', 'Weird3');
-      AddBall('computer', 'Weird2');
+    case 'weird4':
+      AddBall('weird4', 'Weird4');
+      AddBall('weird1', 'Weird1');
+      AddBall('weird5', 'Weird5');
+      AddBall('weird3', 'Weird3');
+      AddBall('weird2', 'Weird2');
       break;
-    case 'programming':
-      AddBall('computer', 'Weird2');
-      AddBall('andi', 'Weird1');
-      AddBall('piano', 'Weird5');
-      AddBall('plasma', 'Weird3');
-      AddBall('qiqihar', 'Weird4');
+    case 'weird5':
+      AddBall('weird2', 'Weird2');
+      AddBall('weird1', 'Weird1');
+      AddBall('weird5', 'Weird5');
+      AddBall('weird3', 'Weird3');
+      AddBall('weird4', 'Weird4');
       break;
   }
 
@@ -70,7 +70,7 @@ function andimenuinit(category) {
 }
 
 function addstandardmenus(category) {
-  AddMenu('andi');
+  AddMenu('weird1');
   AddMenuItem('-&nbsp;Weird1&nbsp;-', '', 'TITLE');
   // AddMenuItem("<CENTER><EM><B>Andi</B></EM></CENTER>","","");
   AddMenuItem('Weird2', 'aboutme.html', '');
@@ -80,7 +80,7 @@ function addstandardmenus(category) {
   AddMenuItem('Werid', 'links.html', '');
   addhome(category);
 
-  AddMenu('plasma');
+  AddMenu('weird2');
   //AddMenuItem('<CENTER><SPAN class="menutitle">- Physics -</SPAN></CENTER>',"","");
   AddMenuItem('-&nbsp;Physics&nbsp;-', '', 'TITLE');
   AddMenuItem('Physics', 'physics.html', '');
@@ -90,7 +90,7 @@ function addstandardmenus(category) {
   AddMenuItem('Diploma&nbsp;thesis', 'diplomathesis.html', '');
   addhome(category);
 
-  AddMenu('piano');
+  AddMenu('weird3');
   AddMenuItem('-&nbsp;Music&nbsp;-', '', 'TITLE');
   AddMenuItem('Music', 'music.html', '');
   AddMenuItem('Performances', 'performances.html', '');
@@ -98,7 +98,7 @@ function addstandardmenus(category) {
   //AddMenuItem("","","");
   addhome(category);
 
-  AddMenu('qiqihar');
+  AddMenu('weird5');
   AddMenuItem('-&nbsp;Travelling&nbsp;-', '', 'TITLE');
   AddMenuItem('Travelling', 'travelling.html', '');
   AddMenuItem('Wolfersdorf', 'wolfersdorfpics.html', '');
@@ -110,7 +110,7 @@ function addstandardmenus(category) {
   );
   addhome(category);
 
-  AddMenu('computer');
+  AddMenu('weird4');
   AddMenuItem('-&nbsp;Weird2&nbsp;-', '', 'TITLE');
   AddMenuItem('Weird2', 'programming.html', '');
   AddMenuItem('Weird3&nbsp;BallMenu', 'aboutballmenu.html', '');
