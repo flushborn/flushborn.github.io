@@ -73,9 +73,9 @@ function addstandardmenus(category) {
   AddMenu('weird1');
   AddMenuItem('-&nbsp;Weird1&nbsp;-', '', 'TITLE');
   // AddMenuItem("<CENTER><EM><B>Andi</B></EM></CENTER>","","");
-  AddMenuItem('Weird2', 'aboutme.html', '');
-  AddMenuItem('Weird3', 'curriculumvitae.html', '');
-  AddMenuItem('Weird4', 'contactme.html', '');
+  AddMenuItem('Oracle', 'oracle.html', '');
+  AddMenuItem('GuestBook', 'guestbook.html', '');
+  AddMenuItem('Home', 'index.html', '');
   //AddMenuItem("Guestbook","guestbook.html","");
   AddMenuItem('Werid', 'links.html', '');
   addhome(category);
