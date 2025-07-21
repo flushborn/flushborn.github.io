@@ -111,10 +111,10 @@ function addstandardmenus(category) {
   addhome(category);
 
   AddMenu('computer');
-  AddMenuItem('-&nbsp;Programming&nbsp;-', '', 'TITLE');
-  AddMenuItem('Programming', 'programming.html', '');
-  AddMenuItem('Andis&nbsp;BallMenu', 'aboutballmenu.html', '');
-  AddMenuItem('Ball&nbsp;Settings...', '', 'showSettingMenu()');
+  AddMenuItem('-&nbsp;Weird2&nbsp;-', '', 'TITLE');
+  AddMenuItem('Weird2', 'programming.html', '');
+  AddMenuItem('Weird3&nbsp;BallMenu', 'aboutballmenu.html', '');
+  AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 }
 
