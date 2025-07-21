@@ -81,39 +81,44 @@ function addstandardmenus(category) {
   addhome(category);
 
   AddMenu('weird2');
-  //AddMenuItem('<CENTER><SPAN class="menutitle">- Physics -</SPAN></CENTER>',"","");
-  AddMenuItem('-&nbsp;Physics&nbsp;-', '', 'TITLE');
-  AddMenuItem('Physics', 'physics.html', '');
-  AddMenuItem('Quark&nbsp;Gluon&nbsp;Plasma', 'qgp.html', '');
-  AddMenuItem('My&nbsp;current&nbsp;research', 'currentresearch.html', '');
-  AddMenuItem('Data&nbsp;tables', 'datatables.html', '');
-  AddMenuItem('Diploma&nbsp;thesis', 'diplomathesis.html', '');
+  AddMenuItem('Oracle', 'oracle.html', '');
+  AddMenuItem('GuestBook', 'guestbook.html', '');
+  AddMenuItem('Home', 'index.html', '');
+  // AddMenuItem('Quark&nbsp;Gluon&nbsp;Plasma', 'qgp.html', '');
+  // AddMenuItem('My&nbsp;current&nbsp;research', 'currentresearch.html', '');
+  // AddMenuItem('Data&nbsp;tables', 'datatables.html', '');
+  // AddMenuItem('Diploma&nbsp;thesis', 'diplomathesis.html', '');
+  AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
   AddMenu('weird3');
-  AddMenuItem('-&nbsp;Music&nbsp;-', '', 'TITLE');
-  AddMenuItem('Music', 'music.html', '');
-  AddMenuItem('Performances', 'performances.html', '');
-  AddMenuItem('Compositions', 'compositions.html', '');
+  AddMenuItem('Oracle', 'oracle.html', '');
+  AddMenuItem('GuestBook', 'guestbook.html', '');
+  AddMenuItem('Home', 'index.html', '');
+  // AddMenuItem('Compositions', 'compositions.html', '');
+  AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   //AddMenuItem("","","");
   addhome(category);
 
   AddMenu('weird5');
-  AddMenuItem('-&nbsp;Travelling&nbsp;-', '', 'TITLE');
-  AddMenuItem('Travelling', 'travelling.html', '');
-  AddMenuItem('Wolfersdorf', 'wolfersdorfpics.html', '');
-  AddMenuItem('Impressions&nbsp;of&nbsp;China', 'chinapics.html', '');
-  AddMenuItem(
-    'Chinazivis&nbsp;(extern)',
-    'http://quark.itp.tuwien.ac.at/~ipp/chinazivis/" target="_blank',
-    ''
-  );
+  AddMenuItem('Oracle', 'oracle.html', '');
+  AddMenuItem('GuestBook', 'guestbook.html', '');
+  AddMenuItem('Home', 'index.html', '');
+  // AddMenuItem('Impressions&nbsp;of&nbsp;China', 'chinapics.html', '');
+  // AddMenuItem(
+  //   'Chinazivis&nbsp;(extern)',
+  //   'http://quark.itp.tuwien.ac.at/~ipp/chinazivis/" target="_blank',
+  //   ''
+  // );
+  AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
   AddMenu('weird4');
-  AddMenuItem('-&nbsp;Weird2&nbsp;-', '', 'TITLE');
-  AddMenuItem('Weird2', 'programming.html', '');
-  AddMenuItem('Weird3&nbsp;BallMenu', 'aboutballmenu.html', '');
+  // AddMenuItem('-&nbsp;Weird2&nbsp;-', '', 'TITLE');
+  AddMenuItem('Oracle', 'oracle.html', '');
+  AddMenuItem('GuestBook', 'guestbook.html', '');
+  AddMenuItem('Home', 'index.html', '');
+  // AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 }
@@ -122,7 +127,7 @@ function addhome(category) {
   if (category != 'homepage') {
     AddMenuItem('<HR>', '', '');
     AddMenuItem('<CENTER>Main&nbsp;Page</CENTER>', 'index.html', '');
-    AddMenuItem('<CENTER>Guestbook</CENTER>', 'guestbook.html', '');
+    AddMenuItem('<CENTER>Guestbook</CENTER>', 'guestbook/index.html', '');
   }
 }
 
