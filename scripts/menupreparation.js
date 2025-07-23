@@ -151,9 +151,18 @@ function preparedocument() {
       document.write(
         '<div id="' + ballid + '" class="ballstyle" ' + includestyle + '>'
       );
-      document.write('<a href="' + menuLink + '" " ');
-      includeStatus(caption + ' - Click for menu');
-      document.write('>');
+      //   document.write('<a href="' + menuLink + '" " ');
+
+      if (BallInit[i].showMenu) {
+        document.write(
+          '<a href="#" onclick="showballmenu(Balls[' + i + ']); return false;">'
+        );
+      } else {
+        document.write('<a href="' + menuLink + '" " ');
+      }
+
+      //   includeStatus(caption + ' - Click for menu');
+      !BallInit[i].showMenu && document.write('>');
       document.write(
         '<img src="' +
           ballgif +
