@@ -172,7 +172,8 @@ function set_scroll() {
   }
 }
 
-document.onmousemove = mouse;
+document.addEventListener('mousemove', mouse);
+
 function mouse(e) {
   var x;
   if (e) x = e.pageX;

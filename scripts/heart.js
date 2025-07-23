@@ -123,7 +123,8 @@ function break_my_heart(i) {
   setTimeout('herz[' + i + '].style.visibility="hidden";', 60 * (t - herzs[i]));
 }
 
-document.onmousemove = mouse;
+document.addEventListener('mousemove', mouse);
+
 function mouse(e) {
   if (e) {
     y = e.pageY;
