@@ -14,12 +14,13 @@ var BallInitMax = 0;
 var MenuInit = new Array(); // Array contains Array of MenuItemObjects
 var MenuNameInit = new Array(); // Array contains links from names to numbers
 var CurrentMenuInit; // Current active MenuName
+var CurrentMenuLink; // Current active MenuLink
 
 var dirgif = './images/balls/'; // Path of gif
 var dirjs = ''; // Path of JavaScript
 
 // Class BallInitObject
-function BallInitObject(addballname, addcaption) {
+function BallInitObject(addballname, addcaption, addLink, addOpenMenu) {
   this.ballname = addballname;
   this.ballid = addballname + 'ball';
   this.balltextid = addballname + 'text';
@@ -30,16 +31,24 @@ function BallInitObject(addballname, addcaption) {
   this.balltracegif = dirgif + addballname + 'trace.gif';
   this.ballstopgif = dirgif + 'ballstop.gif'; // all have the same ballstop.gif
   this.caption = addcaption;
+  this.menuLink = addLink;
+  this.showMenu = addOpenMenu;
 }
 
-function AddBall(addballname, addcaption) {
-  BallInit[BallInitMax] = new BallInitObject(addballname, addcaption);
+function AddBall(addballname, addcaption, addLink, addOpenMenu) {
+  BallInit[BallInitMax] = new BallInitObject(
+    addballname,
+    addcaption,
+    addLink,
+    addOpenMenu
+  );
   BallInitMax++;
 }
 
 // Class MenuInitObject
-function MenuInitObject(addmenuname) {
+function MenuInitObject(addmenuname, addmenulink) {
   this.menuname = addmenuname;
+  this.menulink = addmenulink;
   this.menuid = addmenuname + 'menu';
   this.item = new Array(); // Array for MenuItems
 }
@@ -51,10 +60,11 @@ function MenuItemObject(addcaption, addhref, addonclick) {
   this.onclick = addonclick;
 }
 
-function AddMenu(addmenuname) {
+function AddMenu(addmenuname, addmenulink) {
   CurrentMenuInit = addmenuname; // set active MenuName
-  MenuNameInit[addmenuname] = MenuInit.length; // name -> number (link)
-  MenuInit[MenuInit.length] = new MenuInitObject(addmenuname);
+  CurrentMenuLink = addmenulink; // set active MenuName
+  MenuNameInit[(addmenuname, addmenulink)] = MenuInit.length; // name -> number (link)
+  MenuInit[MenuInit.length] = new MenuInitObject(addmenuname, addmenulink);
   // MenuInit.length increases automatically
 }
 
@@ -141,13 +151,18 @@ function preparedocument() {
       document.write(
         '<div id="' + ballid + '" class="ballstyle" ' + includestyle + '>'
       );
-      document.write(
-        '<a href="javascript:myvoid()" onclick="showballmenu(Balls[' +
-          i +
-          '])" '
-      );
-      includeStatus(caption + ' - Click for menu');
-      document.write('>');
+      //   document.write('<a href="' + menuLink + '" " ');
+
+      if (BallInit[i].showMenu) {
+        document.write(
+          '<a href="#" onclick="showballmenu(Balls[' + i + ']); return false;">'
+        );
+      } else {
+        document.write('<a href="' + menuLink + '" " ');
+      }
+
+      //   includeStatus(caption + ' - Click for menu');
+      !BallInit[i].showMenu && document.write('>');
       document.write(
         '<img src="' +
           ballgif +

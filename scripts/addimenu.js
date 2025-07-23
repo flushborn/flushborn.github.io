@@ -54,11 +54,11 @@ function andimenuinit(category) {
       AddBall('weird2', 'Weird2');
       break;
     case 'weird5':
-      AddBall('weird2', 'Weird2');
-      AddBall('weird1', 'Weird1');
-      AddBall('weird5', 'Weird5');
-      AddBall('weird3', 'Weird3');
-      AddBall('weird4', 'Weird4');
+      AddBall('weird2', 'Weird2', 'oracle.html', true);
+      AddBall('weird1', 'Weird1', 'guestbook.html', false);
+      AddBall('weird5', 'Weird5', 'index.html', false);
+      AddBall('weird3', 'Weird3', 'oracle.html', false);
+      AddBall('weird4', 'Weird4', 'guestbook.html', false);
       break;
   }
 
