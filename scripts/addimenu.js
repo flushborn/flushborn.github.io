@@ -12,6 +12,8 @@ function andimenuinit(category) {
   TraceMax = 0;
 
   dirgif = './images/balls/';
+  SHOWMENU = true;
+  HIDEMENU = false;
   startsetting = settingmenustyle;
 
   // order of menuitems is important
@@ -54,11 +56,11 @@ function andimenuinit(category) {
       AddBall('weird2', 'Weird2');
       break;
     case 'weird5':
-      AddBall('weird2', 'Weird2', 'oracle.html', true);
-      AddBall('weird1', 'Weird1', 'guestbook.html', false);
-      AddBall('weird5', 'Weird5', 'index.html', false);
-      AddBall('weird3', 'Weird3', 'oracle.html', false);
-      AddBall('weird4', 'Weird4', 'guestbook.html', false);
+      AddBall('weird2', 'Weird2', 'oracle.html', SHOWMENU);
+      AddBall('weird1', 'Weird1', 'guestbook.html', HIDEMENU);
+      AddBall('weird5', 'Weird5', 'index.html', HIDEMENU);
+      AddBall('weird3', 'Weird3', 'oracle.html', HIDEMENU);
+      AddBall('weird4', 'Weird4', 'guestbook.html', HIDEMENU);
       break;
   }
 
