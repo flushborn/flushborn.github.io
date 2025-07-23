@@ -83,9 +83,17 @@ function TracePoint(vlaytr) {
 }
 
 // Neue Klasse Ball / new class ball
-function ball(vlayobj, vlayobjtext, vlayobjmenu, tracekind, vlayobjstop) {
+function ball(
+  vlayobj,
+  vlayobjtext,
+  // vMenuType,
+  vlayobjmenu,
+  tracekind,
+  vlayobjstop
+) {
   this.vlayobj = vlayobj; // pointer to vlay.objectid
   this.vlayobjtext = vlayobjtext; // text description
+  // this.vMenuType = vMenuType; // is this a menu type or just anchor on itself
   this.vlayobjmenu = vlayobjmenu; // menu
   this.vlayobjstop = vlayobjstop; // stop for inactive
   this.x = 0; //position
@@ -707,10 +715,11 @@ function showballmenu(thisball) {
   if (menutop < 0) menutop = 0;
 
   thisball.vlayobjmenu.vpos(menuleft, menutop);
-  show(thisball.vlayobjmenu);
+  // show(thisball.vlayobjmenu);
+  hide(thisball.vlayobjmenu);
   thisball.vlayobjmenu.vopacity(90);
 
-  thisball.menustate = 1;
+  // thisball.menustate = 1;
 }
 
 function showSettingMenu() {
