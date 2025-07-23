@@ -23,7 +23,7 @@ function start() {
   if (ns4) doc.captureEvents(Event.MOUSEMOVE);
   //if (ns4) doc.captureEvents(Event.MOUSEDOWN);
 
-  document.addEventListener('onmousemove', posquick);
+  document.addEventListener('mousemove', posquick);
   //doc.onmousedown=mdown
 }
 
@@ -36,12 +36,12 @@ function posquick(e) {
   var posy = 0;
   if (!e) var e = window.event;
   if (e.pageX || e.pageY) {
-    document.addEventListener('onmousemove', pq1);
+    document.addEventListener('mousemove', pq1);
   } else if (e.clientX || e.clientY) {
-    document.addEventListener('onmousemove', pq2);
+    document.addEventListener('mousemove', pq2);
 
     if (isIE) {
-      document.addEventListener('onmousemove', pq3);
+      document.addEventListener('mousemove', pq3);
     }
   }
   // alert(""+doc.onmousemove);

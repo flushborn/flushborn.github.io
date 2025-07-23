@@ -41,7 +41,7 @@ function mwah() {
     for (i = 0; i < hearts; i++) {
       heart = createDiv('auto', 'auto');
       heart.style.visibility = 'hidden';
-      heart.style.zIndex = over_or_under == 'over' ? '1001' : '0';
+      heart.style.zIndex = over_or_under == 'under' ? '10' : '0';
       heart.style.color = colours[i % colours.length];
       heart.style.pointerEvents = 'none';
       if (navigator.appName == 'Microsoft Internet Explorer')
