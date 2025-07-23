@@ -80,7 +80,7 @@ function addstandardmenus(category) {
   AddMenuItem('Werid', 'links.html', '');
   addhome(category);
 
-  AddMenu('weird2', 'guestbook.html');
+  AddMenu('weird2');
   AddMenuItem('-&nbsp;Weird2&nbsp;-', '', 'TITLE');
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
@@ -92,7 +92,7 @@ function addstandardmenus(category) {
   AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
-  AddMenu('weird3', 'home.html');
+  AddMenu('weird3');
   AddMenuItem('-&nbsp;Weird3&nbsp;-', '', 'TITLE');
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
@@ -102,7 +102,7 @@ function addstandardmenus(category) {
   //AddMenuItem("","","");
   addhome(category);
 
-  AddMenu('weird5', 'oracle.html');
+  AddMenu('weird5');
   AddMenuItem('-&nbsp;Weird5&nbsp;-', '', 'TITLE');
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
@@ -116,7 +116,7 @@ function addstandardmenus(category) {
   AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
-  AddMenu('weird4', 'oracle.html');
+  AddMenu('weird4');
   AddMenuItem('-&nbsp;Weird4&nbsp;-', '', 'TITLE');
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
