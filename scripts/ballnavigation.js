@@ -719,7 +719,7 @@ function showballmenu(thisball) {
   // hide(thisball.vlayobjmenu);
   thisball.vlayobjmenu.vopacity(90);
 
-  thisball.menustate = 1;
+  // thisball.menustate = 1;
 }
 
 function showSettingMenu() {

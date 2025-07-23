@@ -61,6 +61,7 @@ function andimenuinit(category) {
       AddBall('weird5', 'Weird5', 'index.html', HIDEMENU);
       AddBall('weird3', 'Weird3', 'oracle.html', HIDEMENU);
       AddBall('weird4', 'Weird4', 'guestbook.html', HIDEMENU);
+
       break;
   }
 
