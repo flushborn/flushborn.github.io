@@ -715,8 +715,8 @@ function showballmenu(thisball) {
   if (menutop < 0) menutop = 0;
 
   thisball.vlayobjmenu.vpos(menuleft, menutop);
-  // show(thisball.vlayobjmenu);
-  hide(thisball.vlayobjmenu);
+  show(thisball.vlayobjmenu);
+  // hide(thisball.vlayobjmenu);
   thisball.vlayobjmenu.vopacity(90);
 
   // thisball.menustate = 1;
