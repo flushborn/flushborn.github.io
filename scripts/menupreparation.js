@@ -136,10 +136,9 @@ function preparedocument() {
           '" class="balltext" ' +
           includestyle +
           '>' +
-          caption +
-          '<BR>'
+          caption
       );
-      document.write('(Please&nbsp;click)</div>');
+      document.write('</div>');
     }
   }
 
@@ -260,5 +259,3 @@ function closeAllMenus() {
     hide(vlay[MenuInit[i].menuid]);
   }
 }
-
-//</SCRIPT>

@@ -1,4 +1,3 @@
-//<script>
 /*
  * browserspecific.js
  * Andreas Ipp, June 2002
@@ -21,10 +20,8 @@ var ScrollTop;
 
 function start() {
   if (ns4) doc.captureEvents(Event.MOUSEMOVE);
-  //if (ns4) doc.captureEvents(Event.MOUSEDOWN);
 
   document.addEventListener('mousemove', posquick);
-  //doc.onmousedown=mdown
 }
 
 //--------------------------------------------
@@ -239,6 +236,3 @@ function gosq2(obj, ds) {
   ds.right = ds.left + parseInt(obj.clip.width);
   ds.bottom = ds.top + parseInt(obj.clip.height);
 }
-
-//--------------------------------------------
-//</script>
