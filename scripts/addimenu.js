@@ -43,8 +43,8 @@ function andimenuinit(category) {
     case 'flushborn':
       AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, SHOWMENU);
       AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
-      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, SHOWMENU);
+      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
       AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
       AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
       AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
@@ -53,8 +53,8 @@ function andimenuinit(category) {
       AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, SHOWMENU);
       AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
       AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
-      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, SHOWMENU);
+      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
       AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
       AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
       AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
@@ -63,8 +63,8 @@ function andimenuinit(category) {
       AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, SHOWMENU);
       AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
       AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
-      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, SHOWMENU);
+      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
       AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
       AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
       break;
@@ -72,15 +72,15 @@ function andimenuinit(category) {
       AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, SHOWMENU);
       AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
       AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
-      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, SHOWMENU);
+      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
       AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
       AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
       break;
     case 'unlost':
       AddBall('unlost', 'Unlost Screws', UNLOST_URL, SHOWMENU);
-      AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
-      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, SHOWMENU);
+      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
       AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
       AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
       AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
@@ -97,8 +97,8 @@ function andimenuinit(category) {
       break;
     case 'leaves':
       AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, SHOWMENU);
-      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, SHOWMENU);
+      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, HIDEMENU);
       AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
       AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
       AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
@@ -163,7 +163,7 @@ function addstandardmenus(category) {
   );
   AddMenuItem('Oracle', ORACLE_URL, '');
   AddMenuItem('GuestBook', GUESTBOOK_URL, '');
-  AddMenuItem('Home', SEQUAK_URL, '');
+  AddMenuItem('Home', LEAVES_URL, '');
   AddMenuItem(
     'Moonlit Leaves Library&nbsp;Settings...',
     '',
@@ -175,7 +175,7 @@ function addstandardmenus(category) {
   AddMenuItem('<CENTER><EM><B>Moonlit Breathes</B></EM></CENTER>', '', 'TITLE');
   AddMenuItem('Oracle', ORACLE_URL, '');
   AddMenuItem('GuestBook', GUESTBOOK_URL, '');
-  AddMenuItem('Home', SEQUAK_URL, '');
+  AddMenuItem('Home', BREATHES_URL, '');
   AddMenuItem('Moonlit Breathes&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 }
