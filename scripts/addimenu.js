@@ -35,18 +35,18 @@ function andimenuinit(category) {
       AddBall('weird2', 'Weird2');
       break;
     case 'weird2':
-      AddBall('weird3', 'Weird3');
-      AddBall('weird1', 'Weird1');
-      AddBall('weird5', 'Weird5');
-      AddBall('weird4', 'Weird4');
-      AddBall('weird2', 'Weird2');
+      AddBall('weird1', 'Weird1', 'guestbook.html', HIDEMENU);
+      AddBall('weird5', 'Weird5', 'index.html', HIDEMENU);
+      AddBall('weird3', 'Weird3', 'oracle.html', HIDEMENU);
+      AddBall('weird4', 'Weird4', 'guestbook.html', HIDEMENU);
+      AddBall('weird2', 'Weird2', 'oracle.html', SHOWMENU);
       break;
     case 'weird3':
-      AddBall('weird5', 'Weird5');
-      AddBall('weird1', 'Weird1');
-      AddBall('weird4', 'Weird4');
-      AddBall('weird3', 'Weird3');
-      AddBall('weird2', 'Weird2');
+      AddBall('weird1', 'Weird1', 'guestbook.html', HIDEMENU);
+      AddBall('weird5', 'Weird5', 'index.html', HIDEMENU);
+      AddBall('weird3', 'Weird3', 'oracle.html', SHOWMENU);
+      AddBall('weird4', 'Weird4', 'guestbook.html', HIDEMENU);
+      AddBall('weird2', 'Weird2', 'oracle.html', HIDEMENU);
       break;
     case 'weird4':
       AddBall('weird4', 'Weird4');
@@ -74,39 +74,33 @@ function andimenuinit(category) {
 
 function addstandardmenus(category) {
   AddMenu('weird1');
-  AddMenuItem('-&nbsp;Weird1&nbsp;-', '', 'TITLE');
+  AddMenuItem('<CENTER><EM><B>Weird1</B></EM></CENTER>', '', 'TITLE');
   // AddMenuItem("<CENTER><EM><B>Andi</B></EM></CENTER>","","");
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
   AddMenuItem('Home', 'index.html', '');
-  //AddMenuItem("Guestbook","guestbook.html","");
   AddMenuItem('Werid', 'links.html', '');
   addhome(category);
 
   AddMenu('weird2');
-  AddMenuItem('-&nbsp;Weird2&nbsp;-', '', 'TITLE');
+  AddMenuItem('<CENTER><EM><B>Weird2</B></EM></CENTER>', '', 'TITLE');
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
   AddMenuItem('Home', 'index.html', '');
-  // AddMenuItem('Quark&nbsp;Gluon&nbsp;Plasma', 'qgp.html', '');
-  // AddMenuItem('My&nbsp;current&nbsp;research', 'currentresearch.html', '');
-  // AddMenuItem('Data&nbsp;tables', 'datatables.html', '');
-  // AddMenuItem('Diploma&nbsp;thesis', 'diplomathesis.html', '');
   AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
   AddMenu('weird3');
-  AddMenuItem('-&nbsp;Weird3&nbsp;-', '', 'TITLE');
+  AddMenuItem('<CENTER><EM><B>Weird3</B></EM></CENTER>', '', 'TITLE');
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
   AddMenuItem('Home', 'index.html', '');
-  // AddMenuItem('Compositions', 'compositions.html', '');
   AddMenuItem('Weird1&nbsp;Settings...', '', 'showSettingMenu()');
   //AddMenuItem("","","");
   addhome(category);
 
   AddMenu('weird5');
-  AddMenuItem('-&nbsp;Weird5&nbsp;-', '', 'TITLE');
+  AddMenuItem('<CENTER><EM><B>Weird5</B></EM></CENTER>', '', 'TITLE');
   AddMenuItem('Oracle', 'oracle.html', '');
   AddMenuItem('GuestBook', 'guestbook.html', '');
   AddMenuItem('Home', 'index.html', '');

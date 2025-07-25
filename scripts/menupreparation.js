@@ -139,7 +139,7 @@ function preparedocument() {
           caption +
           '<BR>'
       );
-      document.write('(Please&nbsp;click)</div>');
+      document.write('</div>');
     }
   }
 
