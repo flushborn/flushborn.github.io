@@ -20,6 +20,9 @@ function andimenuinit(category) {
   SEQUAK_URL = 'https://sacredsequak.github.io/';
   LUMAEN_URL = 'https://lumaenmohair.github.io/';
 
+  ORACLE_URL = 'oracle.html';
+  GUESTBOOK_URL = 'guestbook.html';
+
   startsetting = settingmenustyle;
 
   // order of menuitems is important
@@ -81,58 +84,51 @@ function andimenuinit(category) {
 function addstandardmenus(category) {
   AddMenu('flushborn');
   AddMenuItem('<CENTER><EM><B>Flushborn</B></EM></CENTER>', '', 'TITLE');
-  // AddMenuItem("<CENTER><EM><B>Andi</B></EM></CENTER>","","");
-  AddMenuItem('Oracle', 'oracle.html', '');
-  AddMenuItem('GuestBook', 'guestbook.html', '');
-  AddMenuItem('Home', 'index.html', '');
+  AddMenuItem('Oracle', ORACLE_URL, '');
+  AddMenuItem('GuestBook', GUESTBOOK_URL, '');
+  AddMenuItem('Home', FLUSHBORN_URL, '');
+  AddMenuItem('Flushborn&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
   AddMenu('lumaen');
   AddMenuItem('<CENTER><EM><B>Lumaen Mohair</B></EM></CENTER>', '', 'TITLE');
-  AddMenuItem('Oracle', 'oracle.html', '');
-  AddMenuItem('GuestBook', 'guestbook.html', '');
-  AddMenuItem('Home', 'index.html', '');
-  AddMenuItem('Flushborn&nbsp;Settings...', '', 'showSettingMenu()');
+  AddMenuItem('Oracle', ORACLE_URL, '');
+  AddMenuItem('GuestBook', GUESTBOOK_URL, '');
+  AddMenuItem('Home', LUMAEN_URL, '');
+  AddMenuItem('Lumaen Mohair&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
   AddMenu('snowbloom');
   AddMenuItem('<CENTER><EM><B>Molten Snowbloom</B></EM></CENTER>', '', 'TITLE');
-  AddMenuItem('Oracle', 'oracle.html', '');
-  AddMenuItem('GuestBook', 'guestbook.html', '');
-  AddMenuItem('Home', 'index.html', '');
-  AddMenuItem('Flushborn&nbsp;Settings...', '', 'showSettingMenu()');
-  //AddMenuItem("","","");
+  AddMenuItem('Oracle', ORACLE_URL, '');
+  AddMenuItem('GuestBook', GUESTBOOK_URL, '');
+  AddMenuItem('Home', SNOWBLOOM_URL, '');
+  AddMenuItem('Molten Snowbloom&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
   AddMenu('unlost');
-  AddMenuItem('<CENTER><EM><B>Sacred Sequak</B></EM></CENTER>', '', 'TITLE');
-  AddMenuItem('Oracle', 'oracle.html', '');
-  AddMenuItem('GuestBook', 'guestbook.html', '');
-  AddMenuItem('Home', 'index.html', '');
-  // AddMenuItem('Impressions&nbsp;of&nbsp;China', 'chinapics.html', '');
-  // AddMenuItem(
-  //   'Chinazivis&nbsp;(extern)',
-  //   'http://quark.itp.tuwien.ac.at/~ipp/chinazivis/" target="_blank',
-  //   ''
-  // );
-  AddMenuItem('Flushborn&nbsp;Settings...', '', 'showSettingMenu()');
+  AddMenuItem('<CENTER><EM><B>Unlost Screws</B></EM></CENTER>', '', 'TITLE');
+
+  AddMenuItem('Oracle', ORACLE_URL, '');
+  AddMenuItem('GuestBook', GUESTBOOK_URL, '');
+  AddMenuItem('Unlost Screwns', UNLOST_URL, '');
+  AddMenuItem('Unlost Screws&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 
   AddMenu('sequak');
-  AddMenuItem('<CENTER><EM><B>Unlost Screws</B></EM></CENTER>', '', 'TITLE');
-  AddMenuItem('Oracle', 'oracle.html', '');
-  AddMenuItem('GuestBook', 'guestbook.html', '');
-  AddMenuItem('Home', 'index.html', '');
-  // AddMenuItem('Flushborn&nbsp;Settings...', '', 'showSettingMenu()');
-  AddMenuItem('Flushborn&nbsp;Settings...', '', 'showSettingMenu()');
+  AddMenuItem('<CENTER><EM><B>Sacred Sequak</B></EM></CENTER>', '', 'TITLE');
+  AddMenuItem('Oracle', ORACLE_URL, '');
+  AddMenuItem('GuestBook', GUESTBOOK_URL, '');
+  AddMenuItem('Home', SEQUAK_URL, '');
+  AddMenuItem('Sacred Sequak&nbsp;Settings...', '', 'showSettingMenu()');
   addhome(category);
 }
 
 function addhome(category) {
   if (category != 'homepage') {
     AddMenuItem('<HR>', '', '');
-    AddMenuItem('<CENTER>Main&nbsp;Page</CENTER>', 'index.html', '');
-    AddMenuItem('<CENTER>Guestbook</CENTER>', 'guestbook/index.html', '');
+    AddMenuItem('<CENTER>Main&nbsp;Page</CENTER>', FLUSHBORN_URL, '');
+    AddMenuItem('<CENTER>Guestbook</CENTER>', GUESTBOOK_URL, '');
   }
 }
 
@@ -143,7 +139,6 @@ function addsettingmenu() {
     '',
     'TITLE'
   );
-  //	AddMenuItem("Random&nbsp;setting", "", "settingrandom()");
   AddMenuItem(
     'Billiard&nbsp;table&nbsp;(no&nbsp;force,&nbsp;damping)',
     '',
