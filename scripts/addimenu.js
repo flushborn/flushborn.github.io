@@ -14,6 +14,8 @@ function andimenuinit(category) {
   dirgif = './images/balls/';
   SHOWMENU = true;
   HIDEMENU = false;
+
+  //common URLs
   FLUSHBORN_URL = 'https://flushborn.github.io/';
   UNLOST_URL = 'https://unlostscrews.github.io/';
   SNOWBLOOM_URL = 'https://moltensnowbloom.github.io/';
