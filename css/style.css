@@ -15,18 +15,6 @@
      user-select: none;
  }
 
- img { 
-    display:block;
-    left: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    max-width: 100vw;
-    position: relative;
-    right: 50%;
-    width: 100vw;
-    height: auto;
- }
-
  .stall-door {
      position: relative;
      width: 640px;
