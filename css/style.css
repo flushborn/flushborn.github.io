@@ -6,7 +6,7 @@
      margin: 0;
      height: 100vh;
 
-     background: url("./../images/sr2d3b2a4f9c2aws3.png");
+     background: url("./../images/background.png");
      /* background: linear-gradient(135deg, #f5e9db 0%, #c8d7cc 100%); */
      display: flex;
      align-items: center;
@@ -19,7 +19,7 @@
      position: relative;
      width: 640px;
      height: 560px;
-     background: center / contain no-repeat url("./../images/sr5z02d02ac144aws3.gif"), #eee 35% url("./../images/sr2f7e2281815aws3.png");
+     background: center / contain no-repeat url("./../images/stall_ghost.gif"), #eee 35% url("./../images/duckpower.gif");
 
      /* background: linear-gradient(180deg, #66665c 0%, #4a4a3f 100%); */
      border-radius: 16px 16px 32px 32px;
