@@ -8,6 +8,18 @@
  * special menu for my site
  */
 
+//common URLs
+FLUSHBORN_URL = 'https://flushborn.github.io/';
+UNLOST_URL = 'https://unlostscrews.github.io/';
+SNOWBLOOM_URL = 'https://moltensnowbloom.github.io/';
+SEQUAK_URL = 'https://sacredsequak.github.io/';
+LUMAEN_URL = 'https://lumaenmohair.github.io/';
+BREATHES_URL = 'https://moonlitbreathes.github.io/';
+LEAVES_URL = 'https://mooonlitleaves.github.io/';
+
+ORACLE_URL = 'oracle.html';
+GUESTBOOK_URL = 'guestbook.html';
+
 function andimenuinit(category) {
   TraceMax = 0;
 
@@ -15,104 +27,107 @@ function andimenuinit(category) {
   SHOWMENU = true;
   HIDEMENU = false;
 
-  //common URLs
-  FLUSHBORN_URL = 'https://flushborn.github.io/';
-  UNLOST_URL = 'https://unlostscrews.github.io/';
-  SNOWBLOOM_URL = 'https://moltensnowbloom.github.io/';
-  SEQUAK_URL = 'https://sacredsequak.github.io/';
-  LUMAEN_URL = 'https://lumaenmohair.github.io/';
-  BREATHES_URL = 'https://moonlitbreathes.github.io/';
-  LEAVES_URL = 'https://mooonlitleaveslibrary.github.io/';
-
-  ORACLE_URL = 'oracle.html';
-  GUESTBOOK_URL = 'guestbook.html';
-
   startsetting = settingmenustyle;
 
+  TraceMax = 15;
+  startsetting = settingrandom;
+
+  addBallName();
+
   // order of menuitems is important
-  switch (category) {
-    case 'homepage':
-      TraceMax = 15;
-      startsetting = settingrandom;
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, SHOWMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
-      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-    case 'flushborn':
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, SHOWMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
-      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-    case 'lumaen':
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, SHOWMENU);
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
-      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-    case 'snowbloom':
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, SHOWMENU);
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
-      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-    case 'sequak':
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, SHOWMENU);
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
-      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-    case 'unlost':
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, SHOWMENU);
-      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
-      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-    case 'breathes':
-      AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, SHOWMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-    case 'leaves':
-      AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
-      AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
-      AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, HIDEMENU);
-      AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
-      AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
-      AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
-      AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
-      break;
-  }
+  // switch (category) {
+  //   case 'homepage':
+  //     TraceMax = 15;
+  //     startsetting = settingrandom;
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, SHOWMENU);
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  //     AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  //     AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  //   case 'flushborn':
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, SHOWMENU);
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  //     AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  //     AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  //   case 'lumaen':
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, SHOWMENU);
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  //     AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  //     AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  //   case 'snowbloom':
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, SHOWMENU);
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  //     AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  //     AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  //   case 'sequak':
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, SHOWMENU);
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  //     AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  //     AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  //   case 'unlost':
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, SHOWMENU);
+  //     AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  //     AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  //   case 'breathes':
+  //     AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, SHOWMENU);
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  //     AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  //   case 'leaves':
+  //     AddBall('leaves', 'Moonlit Leaves', UNLOST_URL, SHOWMENU);
+  //     AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  //     AddBall('breathes', 'Moonlit Breathes', UNLOST_URL, HIDEMENU);
+  //     AddBall('flushborn', 'Flushborn', FLUSHBORN_URL, HIDEMENU);
+  //     AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  //     AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
+  //     AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, HIDEMENU);
+  //     break;
+  // }
 
   addstandardmenus(category);
   addsettingmenu();
 
   // now document.write
   preparedocument();
+}
+
+function addBallName() {
+  AddBall('lumaen', 'Lumaen Mohair', LUMAEN_URL, SHOWMENU);
+  AddBall('flushborn', 'Flushbornsssssss', FLUSHBORN_URL, HIDEMENU);
+  AddBall('unlost', 'Unlost Screws', UNLOST_URL, HIDEMENU);
+  AddBall('leaves', 'Moonlit Leaves', LEAVES_URL, HIDEMENU);
+  AddBall('breathes', 'Moonlit Breathes', BREATHES_URL, HIDEMENU);
+  AddBall('snowbloom', 'Molten Snowbloom', SNOWBLOOM_URL, HIDEMENU);
+  AddBall('sequak', 'Sacred Sequak', SEQUAK_URL, HIDEMENU);
 }
 
 function addstandardmenus(category) {

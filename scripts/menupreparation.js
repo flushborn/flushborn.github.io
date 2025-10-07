@@ -218,7 +218,7 @@ function preparedocument() {
               item[j].onclick +
               '; return true;" '
           );
-          includeStatus(item[j].caption);
+          // includeStatus(item[j].caption);
           document.write('>' + item[j].caption + '</a></TD></TR>');
         } else {
           // no link

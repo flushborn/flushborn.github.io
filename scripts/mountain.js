@@ -1,8 +1,8 @@
 // <![CDATA[
 var ranges = 4; // number of mountain ranges
 // all colours must be in format '#NNNNNN', not 'red' or 'rgb(7,8,9)'
-var height = 160; // height in pixels of heighest mountains - ones nearer the front will be smaller
-var foreground = '#9933ff'; // purple
+var height = 100; // height in pixels of heighest mountains - ones nearer the front will be smaller
+var foreground = '#3C4530'; // moss
 var background = '#999999'; // grey
 
 /****************************
@@ -74,7 +74,7 @@ function climb_every_mountain() {
     document.body.appendChild(mranges[i]);
     document.body.appendChild(mranges[i + 1]);
   }
-  setInterval('move_every_mountain()', 50);
+  setInterval('move_every_mountain()', 700);
 }
 
 function colour_central(p) {
@@ -155,8 +155,8 @@ function createTriangle(x, colour) {
 
 window.onscroll = set_scroll;
 function set_scroll() {
-  if (typeof self.pageYOffset == 'number') {
-    sleft = self.pageXOffset;
+  if (typeof self.scrollY == 'number') {
+    sleft = self.scrollY;
   } else if (
     document.body &&
     (document.body.scrollTop || document.body.scrollLeft)
