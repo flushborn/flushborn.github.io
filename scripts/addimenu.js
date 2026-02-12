@@ -15,7 +15,7 @@ SNOWBLOOM_URL = 'https://moltensnowbloom.github.io/';
 SEQUAK_URL = 'https://sacredsequak.github.io/';
 LUMAEN_URL = 'https://lumaenmohair.github.io/';
 BREATHES_URL = 'https://moonlitbreathes.github.io/';
-LEAVES_URL = 'https://mooonlitleaves.github.io/mooonlitleaves/';
+LEAVES_URL = 'https://moonlitleaves.github.io/moonlitleaves/';
 
 ORACLE_URL = 'oracle.html';
 GUESTBOOK_URL = 'guestbook.html';
